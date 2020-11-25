@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.1vw;
+  text-align: center;
+}
+
+.title {
+  font-size: 20vh;
+  line-height: 26vh;
+}
+
+.day {
+  font-size: 30vh;
+}
+
+.time {
+  font-size: 46vh;
+}

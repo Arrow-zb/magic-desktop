@@ -1,0 +1,9 @@
+version: '2.0'
+services: 
+  nginx:
+    image: docker.v2.aispeech.com/aispeech/nginx:1.11.10
+    restart: always
+    ports: 
+      - 50000:80
+    volumes: 
+      - ./today/:/usr/share/nginx/html

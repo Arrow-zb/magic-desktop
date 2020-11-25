@@ -6,7 +6,7 @@ function formate(data) {
 }
 
 const DAY = new Date();
-day.innerHTML = `${formate(DAY.getMonth())}月${formate(DAY.getDay())}日`;
+day.innerHTML = `${formate(DAY.getMonth() + 1)}月${formate(DAY.getDate())}日`;
 
 setInterval(() => {
   const TIME = new Date();
