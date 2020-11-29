@@ -5,11 +5,18 @@ function formate(data) {
   return data >= 10 ? data : `0${data}`
 }
 
-const DAY = new Date();
-day.innerHTML = `${formate(DAY.getMonth() + 1)}月${formate(DAY.getDate())}日`;
+function getDay() {
+  const DAY = new Date();
+  day.innerHTML = `${formate(DAY.getMonth() + 1)}月${formate(DAY.getDate())}日`;
+}
 
-setInterval(() => {
+function getTime() {
   const TIME = new Date();
   time.innerHTML = `${formate(TIME.getHours())}:${formate(TIME.getMinutes())}:${formate(TIME.getSeconds())}`;
-}, 1000);
+}
 
+getDay();
+getTime();
+
+setInterval(getDay, 1000*60*60);
+setInterval(getTime, 1000);
