@@ -9,9 +9,7 @@ services:
       - ./today/:/usr/share/nginx/html
 services: 
   node:
-    image: node:10-alpine
+    build: ./CI
     restart: always
     ports: 
       - 50001:6090
-    command:
-      - ["sh", "./deploy.sh"]
