@@ -5,11 +5,9 @@ const len = content.length;
 let i = 0;
 
 const change = () => {
-  special.innerHTML = '<span>' +  content.slice(0, i).split('').join('</span><span>') + '</span>';
-  i++;
-  if(i > len) {
-    clearInterval(timer);
-    timer = null
+  if(i <= len) {
+    special.innerHTML = '<span>' +  content.slice(0, i).split('').join('</span><span>') + '</span>';
+    i++;
   }
 }
 change();
@@ -30,6 +28,9 @@ function getDay() {
 function getTime() {
   const TIME = new Date();
   time.innerHTML = `${formate(TIME.getHours())}:${formate(TIME.getMinutes())}:${formate(TIME.getSeconds())}`;
+  if(TIME.getSeconds() % 20 === 0) {
+    i = 0;
+  }
 }
 
 getDay();
