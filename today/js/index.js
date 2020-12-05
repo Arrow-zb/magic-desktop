@@ -1,3 +1,20 @@
+const special = document.getElementsByClassName('special')[0];
+const content = '愿我家拉小小永远快乐';
+
+const len = content.length;
+let i = 1;
+
+let timer = setInterval(() => {
+  const widthOld = special.clientWidth;
+  special.innerHTML = '<span>' +  content.slice(0, i).split('').join('</span><span>') + '</span>';
+  i++;
+  if(i > len) {
+    clearInterval(timer);
+    timer = null
+  }
+}, 1000);
+
+
 const day = document.getElementsByClassName('day')[0];
 const time = document.getElementsByClassName('time')[0];
 
@@ -20,4 +37,3 @@ getTime();
 
 setInterval(getDay, 1000*60*60);
 setInterval(getTime, 1000);
-
