@@ -6,4 +6,4 @@ services:
     ports: 
       - 50000:80
     volumes: 
-      - ./today/:/usr/share/nginx/html
+      - ./today:/usr/share/nginx/html
