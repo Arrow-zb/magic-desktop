@@ -7,7 +7,7 @@ function formate(data) {
 
 function getDay() {
   const DAY = new Date();
-  day.innerHTML = `${formate(DAY.getMonth() + 1)}月${formate(DAY.getDate()) - 4}日`;
+  day.innerHTML = `${formate(DAY.getMonth() + 1)}月${formate(DAY.getDate())}日`;
 }
 
 function getTime() {
