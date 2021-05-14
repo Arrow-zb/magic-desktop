@@ -11,7 +11,7 @@ const change = () => {
   }
 }
 change();
-let timer = setInterval(change, 1000);
+// let timer = setInterval(change, 1000);
 
 const day = document.getElementsByClassName('day')[0];
 const time = document.getElementsByClassName('time')[0];

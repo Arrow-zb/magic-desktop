@@ -1,0 +1,27 @@
+{
+  "name": "magic-desktop",
+  "version": "1.0.0",
+  "description": "这是我平时的屏保（桌面）记录。",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npx eslint ./",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ardor-Zhang/magic-desktop.git"
+  },
+  "keywords": [],
+  "author": "ardor",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Ardor-Zhang/magic-desktop/issues"
+  },
+  "homepage": "https://github.com/Ardor-Zhang/magic-desktop#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint": "^7.26.0",
+    "husky": "^6.0.0"
+  }
+}
